@@ -21,11 +21,7 @@
   </ItemGroup>
 
   <ItemGroup>
-    <None Remove="ClientApp\HelloWorld.tsx" />
-  </ItemGroup>
-
-  <ItemGroup>
-    <TypeScriptCompile Include="ClientApp\HelloWorld.tsx" />
+    <TypeScriptCompile Include="ClientApp\HelloWorld0.tsx" />
   </ItemGroup>
 
   <Target Name="DebugRunWebpack" BeforeTargets="Build" Condition=" '$(Configuration)' == 'Debug' And !Exists('wwwroot\dist') ">

@@ -18,6 +18,8 @@ module.exports = (env) => {
         module: {
             rules: [
                 { test: /\.tsx?$/, include: /ClientApp/, use: 'awesome-typescript-loader?silent=true' },
+                { test: /\.js$/, loader: "babel-loader" },
+                { test: /\.jsx$/, loader: "babel-loader" },
                 { test: /\.(png|jpg|jpeg|gif|svg)$/, use: 'url-loader?limit=25000' }
             ]
         },
